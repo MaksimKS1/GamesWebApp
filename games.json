@@ -1,0 +1,958 @@
+{
+  "genres": {
+    "1": "Экшен",
+    "2": "RPG",
+    "3": "Шутер",
+    "4": "Стратегия",
+    "5": "Инди",
+    "6": "Онлайн",
+    "7": "Хоррор",
+    "8": "Приключения",
+    "9": "Симулятор",
+    "10": "Гонки"
+  },
+  "by_genre_id": {
+    "1": [
+      {
+        "id": 1,
+        "name": "God of War: Ragnarök",
+        "genre": "Экшен",
+        "genre_id": 1,
+        "platform": "PC/PS5",
+        "year": 2022,
+        "price": 5499,
+        "desc": "Эпическое приключение Кратоса и Атрея в мире скандинавских мифов."
+      },
+      {
+        "id": 3,
+        "name": "Spider-Man 2",
+        "genre": "Экшен",
+        "genre_id": 1,
+        "platform": "PS5",
+        "year": 2023,
+        "price": 5999,
+        "desc": "Продолжение приключений Питера Паркера и Майлза Моралеса."
+      },
+      {
+        "id": 23,
+        "name": "Spider-Man: Miles Morales",
+        "genre": "Экшен",
+        "genre_id": 1,
+        "platform": "PC/PS5",
+        "year": 2020,
+        "price": 3999,
+        "desc": "Приключения Майлза Моралеса в Нью-Йорке."
+      },
+      {
+        "id": 24,
+        "name": "Horizon Forbidden West",
+        "genre": "Экшен",
+        "genre_id": 1,
+        "platform": "PC/PS5",
+        "year": 2022,
+        "price": 4999,
+        "desc": "Элой продолжает исследовать постапокалиптический мир."
+      }
+    ],
+    "2": [
+      {
+        "id": 2,
+        "name": "Elden Ring",
+        "genre": "RPG",
+        "genre_id": 2,
+        "platform": "PC/PS5/Xbox",
+        "year": 2022,
+        "price": 3999,
+        "desc": "Культовая souls-like игра от FromSoftware и Джорджа Мартина."
+      },
+      {
+        "id": 4,
+        "name": "Baldurs Gate 3",
+        "genre": "RPG",
+        "genre_id": 2,
+        "platform": "PC/PS5",
+        "year": 2023,
+        "price": 4499,
+        "desc": "Лучшая RPG года по версии множества изданий."
+      },
+      {
+        "id": 5,
+        "name": "Starfield",
+        "genre": "RPG",
+        "genre_id": 2,
+        "platform": "PC/Xbox",
+        "year": 2023,
+        "price": 4999,
+        "desc": "Космическая RPG от Bethesda с тысячей планет."
+      },
+      {
+        "id": 34,
+        "name": "Cyberpunk 2077: Phantom Liberty",
+        "genre": "RPG",
+        "genre_id": 2,
+        "platform": "PC/PS5",
+        "year": 2023,
+        "price": 3999,
+        "desc": "Крупное дополнение к культовой RPG."
+      },
+      {
+        "id": 35,
+        "name": "Diablo IV",
+        "genre": "RPG",
+        "genre_id": 2,
+        "platform": "PC/PS5/Xbox",
+        "year": 2023,
+        "price": 4999,
+        "desc": "Возвращение легендарной франшизы."
+      },
+      {
+        "id": 36,
+        "name": "Final Fantasy XVI",
+        "genre": "RPG",
+        "genre_id": 2,
+        "platform": "PS5",
+        "year": 2023,
+        "price": 5999,
+        "desc": "Мрачное фэнтези с экшен-боями."
+      }
+    ],
+    "3": [
+      {
+        "id": 6,
+        "name": "Call of Duty: MW III",
+        "genre": "Шутер",
+        "genre_id": 3,
+        "platform": "PC/PS5/Xbox",
+        "year": 2023,
+        "price": 5499,
+        "desc": "Продолжение перезапуска классики."
+      },
+      {
+        "id": 7,
+        "name": "Counter-Strike 2",
+        "genre": "Шутер",
+        "genre_id": 3,
+        "platform": "PC",
+        "year": 2023,
+        "price": 0,
+        "desc": "Обновление легендарного тактического шутера на движке Source 2."
+      },
+      {
+        "id": 37,
+        "name": "Battlefield 2042",
+        "genre": "Шутер",
+        "genre_id": 3,
+        "platform": "PC/PS5/Xbox",
+        "year": 2021,
+        "price": 3999,
+        "desc": "Масштабные сражения будущего."
+      },
+      {
+        "id": 38,
+        "name": "Halo Infinite",
+        "genre": "Шутер",
+        "genre_id": 3,
+        "platform": "PC/Xbox",
+        "year": 2021,
+        "price": 3999,
+        "desc": "Возвращение Мастера Чифа."
+      },
+      {
+        "id": 39,
+        "name": "Doom Eternal",
+        "genre": "Шутер",
+        "genre_id": 3,
+        "platform": "PC/PS5/Xbox",
+        "year": 2020,
+        "price": 2999,
+        "desc": "Бешеный ритм и демоны."
+      }
+    ],
+    "4": [
+      {
+        "id": 8,
+        "name": "Cities: Skylines II",
+        "genre": "Стратегия",
+        "genre_id": 4,
+        "platform": "PC/PS5",
+        "year": 2023,
+        "price": 3999,
+        "desc": "Градостроительный симулятор нового поколения."
+      },
+      {
+        "id": 9,
+        "name": "Age of Empires IV",
+        "genre": "Стратегия",
+        "genre_id": 4,
+        "platform": "PC",
+        "year": 2021,
+        "price": 2999,
+        "desc": "Историческая RTS от Relic Entertainment."
+      },
+      {
+        "id": 40,
+        "name": "Total War: Warhammer III",
+        "genre": "Стратегия",
+        "genre_id": 4,
+        "platform": "PC",
+        "year": 2022,
+        "price": 3999,
+        "desc": "Эпические фэнтези-битвы."
+      },
+      {
+        "id": 41,
+        "name": "Company of Heroes 3",
+        "genre": "Стратегия",
+        "genre_id": 4,
+        "platform": "PC",
+        "year": 2023,
+        "price": 3499,
+        "desc": "Тактическая стратегия о Второй мировой."
+      },
+      {
+        "id": 42,
+        "name": "StarCraft II",
+        "genre": "Стратегия",
+        "genre_id": 4,
+        "platform": "PC",
+        "year": 2010,
+        "price": 0,
+        "desc": "Классика космических RTS."
+      }
+    ],
+    "5": [
+      {
+        "id": 10,
+        "name": "Hades II",
+        "genre": "Инди",
+        "genre_id": 5,
+        "platform": "PC",
+        "year": 2024,
+        "price": 1499,
+        "desc": "Продолжение рогалика о греческих богах."
+      },
+      {
+        "id": 11,
+        "name": "Hollow Knight: Silksong",
+        "genre": "Инди",
+        "genre_id": 5,
+        "platform": "Nintendo Switch",
+        "year": 2024,
+        "price": 1299,
+        "desc": "Долгожданное продолжение метроидвании."
+      },
+      {
+        "id": 12,
+        "name": "Vampire Survivors",
+        "genre": "Инди",
+        "genre_id": 5,
+        "platform": "PC",
+        "year": 2022,
+        "price": 499,
+        "desc": "Простая, но затягивающая игра на выживание."
+      },
+      {
+        "id": 13,
+        "name": "Stardew Valley",
+        "genre": "Инди",
+        "genre_id": 5,
+        "platform": "Nintendo Switch",
+        "year": 2016,
+        "price": 899,
+        "desc": "Уютный симулятор фермы."
+      },
+      {
+        "id": 43,
+        "name": "Celeste",
+        "genre": "Инди",
+        "genre_id": 5,
+        "platform": "Nintendo Switch",
+        "year": 2018,
+        "price": 899,
+        "desc": "Сложный платформер о преодолении себя."
+      }
+    ],
+    "6": [
+      {
+        "id": 14,
+        "name": "Fortnite",
+        "genre": "Онлайн",
+        "genre_id": 6,
+        "platform": "PC",
+        "year": 2017,
+        "price": 0,
+        "desc": "Королевская битва и творческий режим."
+      },
+      {
+        "id": 15,
+        "name": "Genshin Impact",
+        "genre": "Онлайн",
+        "genre_id": 6,
+        "platform": "PC",
+        "year": 2020,
+        "price": 0,
+        "desc": "Открытый мир и гача-механики."
+      },
+      {
+        "id": 16,
+        "name": "World of Warcraft: Dragonflight",
+        "genre": "Онлайн",
+        "genre_id": 6,
+        "platform": "PC",
+        "year": 2022,
+        "price": 3999,
+        "desc": "Актуальное дополнение легендарной MMORPG."
+      },
+      {
+        "id": 17,
+        "name": "Destiny 2",
+        "genre": "Онлайн",
+        "genre_id": 6,
+        "platform": "PC/PS5/Xbox",
+        "year": 2017,
+        "price": 0,
+        "desc": "Космический шутер с MMO-элементами."
+      },
+      {
+        "id": 44,
+        "name": "Apex Legends",
+        "genre": "Онлайн",
+        "genre_id": 6,
+        "platform": "PC/PS5/Xbox",
+        "year": 2019,
+        "price": 0,
+        "desc": "Динамичная королевская битва."
+      }
+    ],
+    "7": [
+      {
+        "id": 18,
+        "name": "Phasmophobia",
+        "genre": "Хоррор",
+        "genre_id": 7,
+        "platform": "PC",
+        "year": 2020,
+        "price": 999,
+        "desc": "Кооперативная охота на призраков."
+      },
+      {
+        "id": 19,
+        "name": "Dead Space Remake",
+        "genre": "Хоррор",
+        "genre_id": 7,
+        "platform": "PC/PS5/Xbox",
+        "year": 2023,
+        "price": 4999,
+        "desc": "Ужас в космосе возвращается."
+      },
+      {
+        "id": 20,
+        "name": "The Callisto Protocol",
+        "genre": "Хоррор",
+        "genre_id": 7,
+        "platform": "PC/PS5",
+        "year": 2022,
+        "price": 3999,
+        "desc": "Мрачный хоррор от создателя Dead Space."
+      },
+      {
+        "id": 21,
+        "name": "Alan Wake 2",
+        "genre": "Хоррор",
+        "genre_id": 7,
+        "platform": "PC/PS5",
+        "year": 2023,
+        "price": 4499,
+        "desc": "Атмосферный психологический триллер от Remedy."
+      },
+      {
+        "id": 22,
+        "name": "Resident Evil 4 Remake",
+        "genre": "Хоррор",
+        "genre_id": 7,
+        "platform": "PC/PS5/Xbox",
+        "year": 2023,
+        "price": 4999,
+        "desc": "Обновлённая классика выживания в жанре хоррор-экшен."
+      },
+      {
+        "id": 45,
+        "name": "Outlast Trials",
+        "genre": "Хоррор",
+        "genre_id": 7,
+        "platform": "PC",
+        "year": 2023,
+        "price": 1499,
+        "desc": "Кооперативный хоррор."
+      },
+      {
+        "id": 46,
+        "name": "Amnesia: The Bunker",
+        "genre": "Хоррор",
+        "genre_id": 7,
+        "platform": "PC/PS5/Xbox",
+        "year": 2023,
+        "price": 2499,
+        "desc": "Выживание в замкнутом пространстве."
+      }
+    ],
+    "8": [
+      {
+        "id": 25,
+        "name": "The Last of Us Part I",
+        "genre": "Приключения",
+        "genre_id": 8,
+        "platform": "PC/PS5",
+        "year": 2022,
+        "price": 5499,
+        "desc": "Ремейк культовой истории Джоэла и Элли."
+      },
+      {
+        "id": 26,
+        "name": "Uncharted: Legacy of Thieves",
+        "genre": "Приключения",
+        "genre_id": 8,
+        "platform": "PC/PS5",
+        "year": 2022,
+        "price": 3999,
+        "desc": "Сборник приключений Нейтана Дрейка."
+      },
+      {
+        "id": 27,
+        "name": "It Takes Two",
+        "genre": "Приключения",
+        "genre_id": 8,
+        "platform": "PC/PS5",
+        "year": 2021,
+        "price": 3499,
+        "desc": "Кооперативное приключение для двоих."
+      }
+    ],
+    "9": [
+      {
+        "id": 28,
+        "name": "The Sims 4",
+        "genre": "Симулятор",
+        "genre_id": 9,
+        "platform": "PC",
+        "year": 2014,
+        "price": 0,
+        "desc": "Симулятор жизни."
+      },
+      {
+        "id": 29,
+        "name": "Microsoft Flight Simulator",
+        "genre": "Симулятор",
+        "genre_id": 9,
+        "platform": "PC/Xbox",
+        "year": 2020,
+        "price": 4999,
+        "desc": "Реалистичный симулятор полётов."
+      },
+      {
+        "id": 30,
+        "name": "Euro Truck Simulator 2",
+        "genre": "Симулятор",
+        "genre_id": 9,
+        "platform": "PC",
+        "year": 2012,
+        "price": 999,
+        "desc": "Симулятор дальнобойщика."
+      }
+    ],
+    "10": [
+      {
+        "id": 31,
+        "name": "Forza Horizon 5",
+        "genre": "Гонки",
+        "genre_id": 10,
+        "platform": "PC/Xbox",
+        "year": 2021,
+        "price": 4499,
+        "desc": "Открытый мир гонок в Мексике."
+      },
+      {
+        "id": 32,
+        "name": "Gran Turismo 7",
+        "genre": "Гонки",
+        "genre_id": 10,
+        "platform": "PS5",
+        "year": 2022,
+        "price": 5499,
+        "desc": "Реалистичный автосимулятор."
+      },
+      {
+        "id": 33,
+        "name": "Need for Speed Unbound",
+        "genre": "Гонки",
+        "genre_id": 10,
+        "platform": "PC/PS5/Xbox",
+        "year": 2022,
+        "price": 4999,
+        "desc": "Аркадные гонки с уникальным стилем."
+      }
+    ]
+  },
+  "all": [
+    {
+      "id": 1,
+      "name": "God of War: Ragnarök",
+      "genre": "Экшен",
+      "genre_id": 1,
+      "platform": "PC/PS5",
+      "year": 2022,
+      "price": 5499,
+      "desc": "Эпическое приключение Кратоса и Атрея в мире скандинавских мифов."
+    },
+    {
+      "id": 2,
+      "name": "Elden Ring",
+      "genre": "RPG",
+      "genre_id": 2,
+      "platform": "PC/PS5/Xbox",
+      "year": 2022,
+      "price": 3999,
+      "desc": "Культовая souls-like игра от FromSoftware и Джорджа Мартина."
+    },
+    {
+      "id": 3,
+      "name": "Spider-Man 2",
+      "genre": "Экшен",
+      "genre_id": 1,
+      "platform": "PS5",
+      "year": 2023,
+      "price": 5999,
+      "desc": "Продолжение приключений Питера Паркера и Майлза Моралеса."
+    },
+    {
+      "id": 4,
+      "name": "Baldurs Gate 3",
+      "genre": "RPG",
+      "genre_id": 2,
+      "platform": "PC/PS5",
+      "year": 2023,
+      "price": 4499,
+      "desc": "Лучшая RPG года по версии множества изданий."
+    },
+    {
+      "id": 5,
+      "name": "Starfield",
+      "genre": "RPG",
+      "genre_id": 2,
+      "platform": "PC/Xbox",
+      "year": 2023,
+      "price": 4999,
+      "desc": "Космическая RPG от Bethesda с тысячей планет."
+    },
+    {
+      "id": 6,
+      "name": "Call of Duty: MW III",
+      "genre": "Шутер",
+      "genre_id": 3,
+      "platform": "PC/PS5/Xbox",
+      "year": 2023,
+      "price": 5499,
+      "desc": "Продолжение перезапуска классики."
+    },
+    {
+      "id": 7,
+      "name": "Counter-Strike 2",
+      "genre": "Шутер",
+      "genre_id": 3,
+      "platform": "PC",
+      "year": 2023,
+      "price": 0,
+      "desc": "Обновление легендарного тактического шутера на движке Source 2."
+    },
+    {
+      "id": 8,
+      "name": "Cities: Skylines II",
+      "genre": "Стратегия",
+      "genre_id": 4,
+      "platform": "PC/PS5",
+      "year": 2023,
+      "price": 3999,
+      "desc": "Градостроительный симулятор нового поколения."
+    },
+    {
+      "id": 9,
+      "name": "Age of Empires IV",
+      "genre": "Стратегия",
+      "genre_id": 4,
+      "platform": "PC",
+      "year": 2021,
+      "price": 2999,
+      "desc": "Историческая RTS от Relic Entertainment."
+    },
+    {
+      "id": 10,
+      "name": "Hades II",
+      "genre": "Инди",
+      "genre_id": 5,
+      "platform": "PC",
+      "year": 2024,
+      "price": 1499,
+      "desc": "Продолжение рогалика о греческих богах."
+    },
+    {
+      "id": 11,
+      "name": "Hollow Knight: Silksong",
+      "genre": "Инди",
+      "genre_id": 5,
+      "platform": "Nintendo Switch",
+      "year": 2024,
+      "price": 1299,
+      "desc": "Долгожданное продолжение метроидвании."
+    },
+    {
+      "id": 12,
+      "name": "Vampire Survivors",
+      "genre": "Инди",
+      "genre_id": 5,
+      "platform": "PC",
+      "year": 2022,
+      "price": 499,
+      "desc": "Простая, но затягивающая игра на выживание."
+    },
+    {
+      "id": 13,
+      "name": "Stardew Valley",
+      "genre": "Инди",
+      "genre_id": 5,
+      "platform": "Nintendo Switch",
+      "year": 2016,
+      "price": 899,
+      "desc": "Уютный симулятор фермы."
+    },
+    {
+      "id": 14,
+      "name": "Fortnite",
+      "genre": "Онлайн",
+      "genre_id": 6,
+      "platform": "PC",
+      "year": 2017,
+      "price": 0,
+      "desc": "Королевская битва и творческий режим."
+    },
+    {
+      "id": 15,
+      "name": "Genshin Impact",
+      "genre": "Онлайн",
+      "genre_id": 6,
+      "platform": "PC",
+      "year": 2020,
+      "price": 0,
+      "desc": "Открытый мир и гача-механики."
+    },
+    {
+      "id": 16,
+      "name": "World of Warcraft: Dragonflight",
+      "genre": "Онлайн",
+      "genre_id": 6,
+      "platform": "PC",
+      "year": 2022,
+      "price": 3999,
+      "desc": "Актуальное дополнение легендарной MMORPG."
+    },
+    {
+      "id": 17,
+      "name": "Destiny 2",
+      "genre": "Онлайн",
+      "genre_id": 6,
+      "platform": "PC/PS5/Xbox",
+      "year": 2017,
+      "price": 0,
+      "desc": "Космический шутер с MMO-элементами."
+    },
+    {
+      "id": 18,
+      "name": "Phasmophobia",
+      "genre": "Хоррор",
+      "genre_id": 7,
+      "platform": "PC",
+      "year": 2020,
+      "price": 999,
+      "desc": "Кооперативная охота на призраков."
+    },
+    {
+      "id": 19,
+      "name": "Dead Space Remake",
+      "genre": "Хоррор",
+      "genre_id": 7,
+      "platform": "PC/PS5/Xbox",
+      "year": 2023,
+      "price": 4999,
+      "desc": "Ужас в космосе возвращается."
+    },
+    {
+      "id": 20,
+      "name": "The Callisto Protocol",
+      "genre": "Хоррор",
+      "genre_id": 7,
+      "platform": "PC/PS5",
+      "year": 2022,
+      "price": 3999,
+      "desc": "Мрачный хоррор от создателя Dead Space."
+    },
+    {
+      "id": 21,
+      "name": "Alan Wake 2",
+      "genre": "Хоррор",
+      "genre_id": 7,
+      "platform": "PC/PS5",
+      "year": 2023,
+      "price": 4499,
+      "desc": "Атмосферный психологический триллер от Remedy."
+    },
+    {
+      "id": 22,
+      "name": "Resident Evil 4 Remake",
+      "genre": "Хоррор",
+      "genre_id": 7,
+      "platform": "PC/PS5/Xbox",
+      "year": 2023,
+      "price": 4999,
+      "desc": "Обновлённая классика выживания в жанре хоррор-экшен."
+    },
+    {
+      "id": 23,
+      "name": "Spider-Man: Miles Morales",
+      "genre": "Экшен",
+      "genre_id": 1,
+      "platform": "PC/PS5",
+      "year": 2020,
+      "price": 3999,
+      "desc": "Приключения Майлза Моралеса в Нью-Йорке."
+    },
+    {
+      "id": 24,
+      "name": "Horizon Forbidden West",
+      "genre": "Экшен",
+      "genre_id": 1,
+      "platform": "PC/PS5",
+      "year": 2022,
+      "price": 4999,
+      "desc": "Элой продолжает исследовать постапокалиптический мир."
+    },
+    {
+      "id": 25,
+      "name": "The Last of Us Part I",
+      "genre": "Приключения",
+      "genre_id": 8,
+      "platform": "PC/PS5",
+      "year": 2022,
+      "price": 5499,
+      "desc": "Ремейк культовой истории Джоэла и Элли."
+    },
+    {
+      "id": 26,
+      "name": "Uncharted: Legacy of Thieves",
+      "genre": "Приключения",
+      "genre_id": 8,
+      "platform": "PC/PS5",
+      "year": 2022,
+      "price": 3999,
+      "desc": "Сборник приключений Нейтана Дрейка."
+    },
+    {
+      "id": 27,
+      "name": "It Takes Two",
+      "genre": "Приключения",
+      "genre_id": 8,
+      "platform": "PC/PS5",
+      "year": 2021,
+      "price": 3499,
+      "desc": "Кооперативное приключение для двоих."
+    },
+    {
+      "id": 28,
+      "name": "The Sims 4",
+      "genre": "Симулятор",
+      "genre_id": 9,
+      "platform": "PC",
+      "year": 2014,
+      "price": 0,
+      "desc": "Симулятор жизни."
+    },
+    {
+      "id": 29,
+      "name": "Microsoft Flight Simulator",
+      "genre": "Симулятор",
+      "genre_id": 9,
+      "platform": "PC/Xbox",
+      "year": 2020,
+      "price": 4999,
+      "desc": "Реалистичный симулятор полётов."
+    },
+    {
+      "id": 30,
+      "name": "Euro Truck Simulator 2",
+      "genre": "Симулятор",
+      "genre_id": 9,
+      "platform": "PC",
+      "year": 2012,
+      "price": 999,
+      "desc": "Симулятор дальнобойщика."
+    },
+    {
+      "id": 31,
+      "name": "Forza Horizon 5",
+      "genre": "Гонки",
+      "genre_id": 10,
+      "platform": "PC/Xbox",
+      "year": 2021,
+      "price": 4499,
+      "desc": "Открытый мир гонок в Мексике."
+    },
+    {
+      "id": 32,
+      "name": "Gran Turismo 7",
+      "genre": "Гонки",
+      "genre_id": 10,
+      "platform": "PS5",
+      "year": 2022,
+      "price": 5499,
+      "desc": "Реалистичный автосимулятор."
+    },
+    {
+      "id": 33,
+      "name": "Need for Speed Unbound",
+      "genre": "Гонки",
+      "genre_id": 10,
+      "platform": "PC/PS5/Xbox",
+      "year": 2022,
+      "price": 4999,
+      "desc": "Аркадные гонки с уникальным стилем."
+    },
+    {
+      "id": 34,
+      "name": "Cyberpunk 2077: Phantom Liberty",
+      "genre": "RPG",
+      "genre_id": 2,
+      "platform": "PC/PS5",
+      "year": 2023,
+      "price": 3999,
+      "desc": "Крупное дополнение к культовой RPG."
+    },
+    {
+      "id": 35,
+      "name": "Diablo IV",
+      "genre": "RPG",
+      "genre_id": 2,
+      "platform": "PC/PS5/Xbox",
+      "year": 2023,
+      "price": 4999,
+      "desc": "Возвращение легендарной франшизы."
+    },
+    {
+      "id": 36,
+      "name": "Final Fantasy XVI",
+      "genre": "RPG",
+      "genre_id": 2,
+      "platform": "PS5",
+      "year": 2023,
+      "price": 5999,
+      "desc": "Мрачное фэнтези с экшен-боями."
+    },
+    {
+      "id": 37,
+      "name": "Battlefield 2042",
+      "genre": "Шутер",
+      "genre_id": 3,
+      "platform": "PC/PS5/Xbox",
+      "year": 2021,
+      "price": 3999,
+      "desc": "Масштабные сражения будущего."
+    },
+    {
+      "id": 38,
+      "name": "Halo Infinite",
+      "genre": "Шутер",
+      "genre_id": 3,
+      "platform": "PC/Xbox",
+      "year": 2021,
+      "price": 3999,
+      "desc": "Возвращение Мастера Чифа."
+    },
+    {
+      "id": 39,
+      "name": "Doom Eternal",
+      "genre": "Шутер",
+      "genre_id": 3,
+      "platform": "PC/PS5/Xbox",
+      "year": 2020,
+      "price": 2999,
+      "desc": "Бешеный ритм и демоны."
+    },
+    {
+      "id": 40,
+      "name": "Total War: Warhammer III",
+      "genre": "Стратегия",
+      "genre_id": 4,
+      "platform": "PC",
+      "year": 2022,
+      "price": 3999,
+      "desc": "Эпические фэнтези-битвы."
+    },
+    {
+      "id": 41,
+      "name": "Company of Heroes 3",
+      "genre": "Стратегия",
+      "genre_id": 4,
+      "platform": "PC",
+      "year": 2023,
+      "price": 3499,
+      "desc": "Тактическая стратегия о Второй мировой."
+    },
+    {
+      "id": 42,
+      "name": "StarCraft II",
+      "genre": "Стратегия",
+      "genre_id": 4,
+      "platform": "PC",
+      "year": 2010,
+      "price": 0,
+      "desc": "Классика космических RTS."
+    },
+    {
+      "id": 43,
+      "name": "Celeste",
+      "genre": "Инди",
+      "genre_id": 5,
+      "platform": "Nintendo Switch",
+      "year": 2018,
+      "price": 899,
+      "desc": "Сложный платформер о преодолении себя."
+    },
+    {
+      "id": 44,
+      "name": "Apex Legends",
+      "genre": "Онлайн",
+      "genre_id": 6,
+      "platform": "PC/PS5/Xbox",
+      "year": 2019,
+      "price": 0,
+      "desc": "Динамичная королевская битва."
+    },
+    {
+      "id": 45,
+      "name": "Outlast Trials",
+      "genre": "Хоррор",
+      "genre_id": 7,
+      "platform": "PC",
+      "year": 2023,
+      "price": 1499,
+      "desc": "Кооперативный хоррор."
+    },
+    {
+      "id": 46,
+      "name": "Amnesia: The Bunker",
+      "genre": "Хоррор",
+      "genre_id": 7,
+      "platform": "PC/PS5/Xbox",
+      "year": 2023,
+      "price": 2499,
+      "desc": "Выживание в замкнутом пространстве."
+    }
+  ]
+}
