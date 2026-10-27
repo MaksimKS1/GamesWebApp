@@ -139,9 +139,27 @@ fetch("games.json")
 
 // Отправка genre_id боту
 tg.MainButton.onClick(function () {
-    if (item) {
-        tg.sendData(item);
+    if (!item) return;
+
+    const list = (DATA.by_genre_id && DATA.by_genre_id[item]) || [];
+    const genreLabel = DATA.genres[item] || item;
+
+    // Собираем текст так же, как рендерим карточки
+    let text = `Жанр: ${genreLabel}\n\n`;
+    list.forEach((g, i) => {
+        const priceText = g.price > 0 ? `${g.price} руб.` : "Бесплатно";
+        text += `${i + 1}. 🎮 ${g.name}\n`;
+        text += `   🕹 ${g.platform} | 📅 ${g.year} | 💰 ${priceText}\n`;
+        if (g.desc) text += `   📝 ${g.desc}\n`;
+        text += `\n`;
+    });
+
+    // Telegram ограничивает web_app_data ~4096 байтами
+    if (text.length > 4000) {
+        text = text.slice(0, 4000) + "\n…(список обрезан)";
     }
+
+    tg.sendData(JSON.stringify({ type: 'list', genre: item, text: text }));
 });
 </script>
 
