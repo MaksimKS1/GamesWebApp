@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Игровой гид</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+    <!-- Отладка: консоль прямо в приложении -->
+    <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+
     <style>
         * { box-sizing: border-box; }
         body {
@@ -42,6 +46,15 @@
         .game-card h4 { margin: 0 0 8px 0; font-size: 16px; }
         .game-card p { margin: 4px 0; font-size: 14px; opacity: .9; }
         .empty { text-align: center; opacity: .7; padding: 20px; }
+
+        #debug {
+            position: fixed; bottom: 60px; left: 8px; right: 8px;
+            max-height: 120px; overflow-y: auto;
+            background: rgba(0,0,0,.85); color: #0f0;
+            font-size: 11px; font-family: monospace;
+            padding: 6px; border-radius: 8px;
+            z-index: 9999;
+        }
     </style>
 </head>
 <body>
@@ -50,22 +63,34 @@
 
 <div class="buttons" id="buttons-container"></div>
 <div id="games-container"></div>
+<div id="debug">[debug]</div>
 
 <script>
+// ===== Отладка =====
+const debugEl = document.getElementById("debug");
+function log(msg) {
+    console.log(msg);
+    debugEl.textContent += "\n" + msg;
+    debugEl.scrollTop = debugEl.scrollHeight;
+}
+
+// ===== Telegram WebApp =====
 let tg = window.Telegram.WebApp;
+log("TG init: " + (!!window.Telegram) + ", version: " + tg.version);
 tg.ready();
 tg.expand();
 
 tg.MainButton.textColor = "#FFFFFF";
 tg.MainButton.color = "#2cab37";
 
-let item = "";               // genre_id, который отправим боту
-let currentGenreId = null;   // для повторного клика
+log("MainButton доступен: " + (!!tg.MainButton));
+
+let item = "";
+let currentGenreId = null;
 
 const buttonsContainer = document.getElementById("buttons-container");
 const container = document.getElementById("games-container");
 
-// Сюда загрузим games.json
 let DATA = { genres: {}, by_genre_id: {} };
 
 function clearActive() {
@@ -74,12 +99,10 @@ function clearActive() {
 
 function renderGames(genreId) {
     const list = (DATA.by_genre_id && DATA.by_genre_id[genreId]) || [];
-
     if (list.length === 0) {
         container.innerHTML = `<p class="empty">По этому жанру игр нет 😔</p>`;
         return;
     }
-
     container.innerHTML = list.map(g => {
         const priceText = g.price > 0 ? `${g.price} руб.` : "Бесплатно";
         return `
@@ -96,13 +119,14 @@ function renderGames(genreId) {
 
 function onGenreClick(genreId, label, el) {
     clearActive();
+    log("Клик по жанру: id=" + genreId + ", label=" + label);
 
     if (tg.MainButton.isVisible && currentGenreId === genreId) {
-        // Повторный клик по тому же жанру — скрыть всё
         tg.MainButton.hide();
         currentGenreId = null;
         item = "";
         container.innerHTML = "";
+        log("Повторный клик — скрыли MainButton");
         return;
     }
 
@@ -112,6 +136,7 @@ function onGenreClick(genreId, label, el) {
     tg.MainButton.show();
     el.classList.add("active");
     renderGames(genreId);
+    log("MainButton показан, item=" + item);
 }
 
 function buildButtons(genres) {
@@ -123,29 +148,40 @@ function buildButtons(genres) {
         btn.addEventListener("click", () => onGenreClick(id, genres[id], btn));
         buttonsContainer.appendChild(btn);
     }
+    log("Кнопки построены: " + Object.keys(genres).length);
 }
 
-// Загрузка данных из games.json (для отображения в приложении)
+// Загрузка games.json
 fetch("games.json")
     .then(r => r.json())
     .then(json => {
         DATA = json;
         buildButtons(json.genres || {});
+        log("games.json загружен");
     })
     .catch(err => {
         console.error("Не удалось загрузить games.json:", err);
+        log("ОШИБКА games.json: " + err);
         buttonsContainer.innerHTML =
             '<p class="empty">Ошибка загрузки данных 😔</p>';
     });
 
-// Отправка genre_id боту — бот сам пришлёт список игр этого жанра из БД
+// Отправка genre_id боту
 tg.MainButton.onClick(function () {
-    console.log("MainButton clicked, item =", JSON.stringify(item));
-    if (item) {
+    log("MainButton clicked, item=" + JSON.stringify(item));
+    if (!item) {
+        log("item пустой — ничего не отправляем");
+        return;
+    }
+    try {
         tg.sendData(item);
-        console.log("sendData вызван с:", item);
+        log("sendData вызван с: " + item);
+    } catch (e) {
+        log("ОШИБКА sendData: " + e);
     }
 });
+
+log("Скрипт полностью загружен");
 </script>
 
 </body>
