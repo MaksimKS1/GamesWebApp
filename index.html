@@ -53,6 +53,7 @@
 
 <script>
 let tg = window.Telegram.WebApp;
+tg.ready();
 tg.expand();
 
 tg.MainButton.textColor = "#FFFFFF";
@@ -124,7 +125,7 @@ function buildButtons(genres) {
     }
 }
 
-// Загрузка данных из games.json
+// Загрузка данных из games.json (для отображения в приложении)
 fetch("games.json")
     .then(r => r.json())
     .then(json => {
@@ -137,29 +138,13 @@ fetch("games.json")
             '<p class="empty">Ошибка загрузки данных 😔</p>';
     });
 
-// Отправка genre_id боту
+// Отправка genre_id боту — бот сам пришлёт список игр этого жанра из БД
 tg.MainButton.onClick(function () {
-    if (!item) return;
-
-    const list = (DATA.by_genre_id && DATA.by_genre_id[item]) || [];
-    const genreLabel = DATA.genres[item] || item;
-
-    // Собираем текст так же, как рендерим карточки
-    let text = `Жанр: ${genreLabel}\n\n`;
-    list.forEach((g, i) => {
-        const priceText = g.price > 0 ? `${g.price} руб.` : "Бесплатно";
-        text += `${i + 1}. 🎮 ${g.name}\n`;
-        text += `   🕹 ${g.platform} | 📅 ${g.year} | 💰 ${priceText}\n`;
-        if (g.desc) text += `   📝 ${g.desc}\n`;
-        text += `\n`;
-    });
-
-    // Telegram ограничивает web_app_data ~4096 байтами
-    if (text.length > 4000) {
-        text = text.slice(0, 4000) + "\n…(список обрезан)";
+    console.log("MainButton clicked, item =", JSON.stringify(item));
+    if (item) {
+        tg.sendData(item);
+        console.log("sendData вызван с:", item);
     }
-
-    tg.sendData(JSON.stringify({ type: 'list', genre: item, text: text }));
 });
 </script>
 
